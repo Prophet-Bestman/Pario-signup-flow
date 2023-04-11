@@ -21,6 +21,7 @@ interface InputProps {
   inputType?: "input" | "select" | "cleave";
   options?: { name: string; value: string }[];
   cleaveOption?: any;
+  maxLength?: number;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -35,6 +36,7 @@ const Input: React.FC<InputProps> = ({
   control,
   error,
   cleaveOption,
+  maxLength,
   ...rest
 }) => {
   return (
