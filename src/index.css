@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply block w-full mt-4 py-[17px] px-[27px] rounded-[10px] focus:outline-none border-[#4E598C] border;
+  }
+}
+
+.clip-bg {
+  clip-path: polygon(0 0, 100% 0%, 100% 58%, 0 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 201, 76, 0.2) 0%,
+    rgba(242, 153, 74, 0.2) 100%
+  );
+}
+
+.submit-btn {
+  background: linear-gradient(180deg, #f2c94c 0%, #f2994a 100%);
+  border-radius: 10px;
+  padding: 14px 100px;
+  width: fit-content;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.check-shadow {
+  box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+}
+.card-shadow {
+  box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+}
